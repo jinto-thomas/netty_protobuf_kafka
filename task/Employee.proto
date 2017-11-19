@@ -1,0 +1,9 @@
+package auzmor;
+option java_package = "auzmor.protobuf";
+option java_outer_classname = "EmployeeProto";
+
+message Employee {
+	required string name = 1;
+	required int32 id = 2;
+	optional double salary = 3 [default = 100000];
+}
